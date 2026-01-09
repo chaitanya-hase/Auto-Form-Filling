@@ -1,0 +1,251 @@
+/* ----------------------------
+   GLOBAL STYLES
+---------------------------- */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h2, h3 {
+    margin: 0;
+}
+
+/* Flash messages */
+.msg {
+    background-color: #e7f3fe;
+    color: #31708f;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #bce8f1;
+    text-align: center;
+}
+
+/* ----------------------------
+   LOGIN / SIGNUP PAGES
+---------------------------- */
+.auth-container {
+    max-width: 400px;
+    margin: 80px auto;
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.auth-container:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 15px 35px rgba(0,0,0,0.15);
+}
+
+.auth-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-container input {
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.auth-container input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0,123,255,0.5);
+    outline: none;
+}
+
+.auth-container button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.auth-container button:hover {
+    background-color: #0056b3;
+}
+
+.auth-container p {
+    text-align: center;
+    margin-top: 15px;
+    color: #555;
+}
+
+.auth-container p a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.auth-container p a:hover {
+    text-decoration: underline;
+}
+
+/* ----------------------------
+   INDEX.HTML - USER FORM
+---------------------------- */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.top-bar .logout {
+    text-decoration: none;
+    background-color: #ff4d4d;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.top-bar .logout:hover {
+    background-color: #ff1a1a;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Card styles */
+.card {
+    background-color: #fff;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 30px rgba(0,0,0,0.15);
+}
+
+/* Form groups */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 5px rgba(0,123,255,0.5);
+    outline: none;
+}
+
+/* Buttons */
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #1e7e34;
+}
+
+/* Document cards */
+.doc-card {
+    background-color: #f7f9fc;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.3s;
+}
+
+.doc-card:hover {
+    transform: scale(1.02);
+    background-color: #e0f0ff;
+}
+
+/* Actions (load/delete) */
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Autofill card input */
+.autofill input[type="text"] {
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+    .container, .auth-container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+}
